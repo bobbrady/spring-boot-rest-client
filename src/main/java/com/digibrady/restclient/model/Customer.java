@@ -1,5 +1,6 @@
 package com.digibrady.restclient.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Value;
 
@@ -9,11 +10,14 @@ public class Customer {
   private String firstName;
 
   @JsonProperty("lastname")
-  private String lastname;
+  private String lastName;
 
   @JsonProperty("customer_url")
+  @JsonInclude(JsonInclude.Include.NON_NULL)
   private String customerUrl;
 
   @JsonProperty("orders_url")
+  @JsonInclude(JsonInclude.Include.NON_NULL)
   private String ordersUrl;
+
 }

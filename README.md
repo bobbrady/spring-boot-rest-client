@@ -1,6 +1,11 @@
 # Spring Boot REST Client
 
-Example project for using Spring Boot as a REST client.
+Example opinionated project for using Spring Boot as a REST client:
+* Uses nested JSON object model from public API jsonplaceholder.typicode.com/users
+* JSON-to-Object model conversion done manually clean and simple with Lombok
+* Lombok @Value immutable classes used for simplicity
+* Simple Spring Boot skeleton project with JUnit 5 test coverage
+
 
 
 ## REST format
